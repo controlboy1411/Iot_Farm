@@ -1,0 +1,60 @@
+.review-report-tab-container-0 {
+    margin: 20px;
+}
+
+.review-report-tab-container-0-1 {
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.review-report-tab-container-0-1-form-control-root {
+    max-width: 300px;
+    margin-top: 8px !important;
+}
+
+.review-report-tab-container-0-1-datepicker {
+    margin: 0 0 0 16px;
+    max-width: 180px;
+    min-width: 150px;
+}
+
+.review-report-tab-container-0-2 {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.review-report-tab-container-0-1-btn-root {
+    background-color: #0C4DA0 !important;
+    text-transform: none !important;
+    text-wrap: nowrap !important;
+}
+
+.review-report-tab-popup-modal {
+    z-index: 3000 !important;
+    font-family: 'IBM Plex Sans';
+}
+
+.review-report-tab-popup-title {
+    font-family: 'IBM Plex Sans' !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+.review-report-tab-popup-title-status {
+    color: #1962c2;
+    margin-left: 8px;
+}
+
+.review-report-tab-popup-backdrop-modal {
+    z-index: 3000 !important;
+}
+
+@media screen and (max-width: 1500px) {
+    .review-report-tab-container-0-1-form-control-root {
+        max-width: 250px;
+    }
+}

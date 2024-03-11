@@ -1,0 +1,50 @@
+.aboutus-modal {
+    z-index: 3000 !important;
+    font-family: 'IBM Plex Sans';
+}
+
+.aboutus-custom-backdrop-modal {
+    z-index: 3000 !important;
+}
+
+.aboutus-modal-header {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.aboutus-body-container {
+    padding: 10px 20px;
+}
+
+.aboutus-body-container-1-img {
+    width: 80px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.aboutus-body-container-1-title-name-01 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.aboutus-body-container-1-title-name-02 {
+    font-size: 16px;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.aboutus-body-container-table-c1 {
+    min-width: 85px;
+    padding-left: 5px;
+}
+
+.aboutus-body-container-1-title-copyright {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aboutus-body-container-table-row-value {
+    padding-left: 10px;
+    font-weight: 600;
+}

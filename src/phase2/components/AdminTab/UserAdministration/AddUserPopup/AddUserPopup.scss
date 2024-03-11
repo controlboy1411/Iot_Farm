@@ -1,0 +1,47 @@
+.add-new-user-popup {
+    z-index: 1300 !important;
+    overflow: auto;
+}
+
+.add-new-user-popup-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    height: 60px;
+    padding: 5px 5px 5px 15px;
+}
+
+.add-new-user-popup-header-title {
+    display: flex;
+    align-items: center;
+    font-family: 'IBM Plex Sans' !important;
+    font-weight: 600;
+    font-size: 15px;
+    color: #0C4DA0 !important;
+}
+
+.add-new-user-popup-body {
+    padding: 20px 32px;
+    background-color: white;
+}
+
+.add-new-user-popup-body-text-field {
+    margin-bottom: 12px;
+}
+
+.add-user-popup-date-picker {
+    width: 160px;
+}
+
+.add-new-user-popup-body-confirm-btn {
+    margin-top: 20px !important;
+    text-transform: none !important;
+    background-color: #0C4DA0 !important;
+}
+
+.add-new-user-popup-form-control-label-root {
+    margin-left: 8px !important;
+    margin-right: -12px !important;
+}

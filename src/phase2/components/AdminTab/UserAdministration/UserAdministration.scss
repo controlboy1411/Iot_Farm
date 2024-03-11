@@ -1,0 +1,58 @@
+.user-admin-tab-container-0 {
+    margin: 20px;
+}
+
+.user-admin-tab-container-0-1 {
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.user-admin-tab-container-0-1-form-control-root {
+    max-width: 350px;
+}
+
+.user-admin-tab-container-0-1-btn-root {
+    background-color: #0C4DA0 !important;
+    text-transform: none !important;
+    text-wrap: nowrap !important;
+    transition: transform 0.3s ease;
+}
+
+.user-admin-tab-container-0-1-btn-root:hover {
+    transform: scale(1.05);
+    background-color: #0a3d80 !important;
+}
+
+.user-admin-tab-table-header {
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: #376fd0 !important;
+    background-color: rgba(55,111,208,0.125) !important;
+}
+
+.user-admin-tab-table-cell {
+    font-size: 14px !important;
+}
+
+.user-admin-tab-delete-popup-content {
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+}
+
+.user-admin-tab-delete-popup-confirm-btn {
+    text-transform: none !important;
+    font-family: 'IBM Plex Sans' !important;
+    width: 100px !important;
+    margin: 20px 10px 0 10px !important;
+    background-color: #0C4DA0 !important;
+}
+
+.user-admin-tab-delete-popup-cancel-btn {
+    text-transform: none !important;
+    font-family: 'IBM Plex Sans' !important;
+    width: 100px !important;
+    margin: 20px 10px 0 10px !important;
+    background-color: #7e7e7e !important;
+}

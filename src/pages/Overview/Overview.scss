@@ -1,0 +1,250 @@
+.overview-common {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px 20px 30px;
+}
+
+.list-house {
+    margin: 0px 25px 0px 25px;
+}
+
+.farm-title {
+    color: gray;
+    text-align: center;
+}
+
+.farm-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(140%, -20%);
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin farm-info-parent {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 3px #34352d, 0 0 5px #5c6264;
+}
+
+.farm-info-item { 
+    @include farm-info-parent;
+    font-size: 20px;
+}
+
+.farm-info-item-title {
+    @include farm-info-parent;
+    font-size: 24px;
+}
+
+.custom-container {
+    position: relative;
+}
+
+.custom-img {
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+    filter: brightness(50%) contrast(120%);
+    display: block;
+    margin: 0 auto;
+}
+
+.overview-hr {
+    margin: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .overview-hr {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(120%, -20%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1435px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(100%, -20%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1335px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(80%, -20%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(60%, -30%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(40%, -40%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .farm-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        font-size: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @mixin farm-info-parent {
+        margin-bottom: 1px;
+        color: #ffffff;
+        text-shadow: 0 0 3px #34352d, 0 0 5px #5c6264;
+    }
+
+    .farm-info-item {
+        @include farm-info-parent;
+        font-size: 14px;
+    }
+
+    .farm-info-item-title {
+        @include farm-info-parent;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    @mixin farm-info-parent {
+        margin-bottom: 1px;
+        color: #ffffff;
+        text-shadow: 0 0 3px #34352d, 0 0 5px #5c6264;
+    }
+
+    .farm-info-item {
+        @include farm-info-parent;
+        font-size: 12px;
+    }
+
+    .farm-info-item-title {
+        @include farm-info-parent;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    @mixin farm-info-parent {
+        margin-bottom: 1px;
+        color: #ffffff;
+        text-shadow: 0 0 3px #34352d, 0 0 5px #5c6264;
+    }
+
+    .farm-info-item {
+        @include farm-info-parent;
+        font-size: 11px;
+    }
+
+    .farm-info-item-title {
+        @include farm-info-parent;
+        font-size: 13px;
+    }
+
+    .farm-title {
+        color: gray;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    @mixin farm-info-parent {
+        margin-bottom: 1px;
+        color: #ffffff;
+        text-shadow: 0 0 3px #34352d, 0 0 5px #5c6264;
+    }
+
+    .farm-info-item {
+        @include farm-info-parent;
+        font-size: 8px;
+    }
+
+    .farm-info-item-title {
+        @include farm-info-parent;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-home {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    .custom-img {
+        width: 98%;
+        height: auto;
+        opacity: 80%;
+        filter: brightness(50%) contrast(120%);
+        display: block;
+        margin: 0 auto;
+    }
+}

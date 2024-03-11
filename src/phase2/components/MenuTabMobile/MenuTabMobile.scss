@@ -1,0 +1,53 @@
+.menu-tab-mobile-popup {
+    z-index: 1300 !important;
+}
+
+.menu-tab-mobile-logo-img-01 {
+    width: 54px;
+    height: 48px;
+    border-right: 1px solid #bbbbbb;
+}
+
+.menu-tab-mobile-logo-img-02 {
+    width: 58px;
+    height: 55px;
+}
+
+.menu-tab-mobile-title {
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-tab-mobile-margin-top {
+    height: 30px;
+}
+
+.menutab-mobile-about-us-container {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 50px;
+	margin-left: 35px;
+	cursor: pointer;
+	z-index: 1200;
+}
+
+.menutab-mobile-about-us-title {
+    font-family: 'IBM Plex Sans';
+	font-weight: 700;
+	font-size: 16px;
+	color: #074E9F;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+@media screen and (max-width: 650px) {
+	.menutab-mobile-about-us-container {
+		bottom: 75px;
+	}
+}

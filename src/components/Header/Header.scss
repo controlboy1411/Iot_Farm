@@ -1,0 +1,30 @@
+.header-username {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.header-menu-button {
+    display: none;
+}
+
+.header-user-icon {
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .header-username {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .header-menu-button {
+        display: inline;
+    }
+
+    .header-user-icon {
+        width: 16px !important;
+    }
+}

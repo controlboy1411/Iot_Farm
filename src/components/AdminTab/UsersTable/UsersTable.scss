@@ -1,0 +1,51 @@
+@mixin convert-p-to-div {
+    display: block;
+    /* Chuyển thẻ <p> thành một khối (block-level element) */
+    margin: 0;
+    /* Loại bỏ khoảng cách trên và dưới */
+    padding: 0;
+    /* Loại bỏ padding (nếu có) */
+    border: none;
+    /* Loại bỏ viền (nếu có) */
+    background-color: transparent;
+}
+
+.MuiTablePagination-selectLabel {
+    @include convert-p-to-div;
+}
+
+.MuiTablePagination-displayedRows {
+    @include convert-p-to-div;
+}
+
+.css-dwuj3p-MuiTableCell-root {
+    padding: 14px;
+}
+
+.user-table-edit-button {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0da;
+}
+
+.user-table-edit-button:hover {
+    background-color: #ffffff;
+}
+
+.user-table-edit-button:active {
+    background-color: #f0f0f0da;
+}
+
+.user-table-container {
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .user-table-container {
+        margin: 0 5px;
+    }
+}

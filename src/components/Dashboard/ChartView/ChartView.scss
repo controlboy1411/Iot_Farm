@@ -1,0 +1,15 @@
+.canvasjs-chart-credit {
+    display: none !important;
+}
+
+.list-chart-container {
+    display: block;
+}
+
+@media screen and (max-width: 750px) {
+    .list-chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,56 @@
+.access-denied-container {
+    max-width: 520px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.access-denied-subcontainer {
+    padding: 24px;
+    text-align: center;
+    background: transparent;
+}
+
+.access-denied-content-01 {
+    margin: 0 0 0.35em;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    font-family: 'IBM Plex Sans';
+    text-align: center;
+}
+
+.access-denied-content-02 {
+    margin: 0 0 0.35em;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: 'IBM Plex Sans';
+    text-align: center;
+}
+
+.access-denied-content-03 {
+    margin: 0 0 0.35em;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.access-denied-button {
+    margin-top: 8px !important;
+    width: 105px !important;
+    height: 32px;
+}
+
+@media screen and (min-width: 960px) {
+    .access-denied-subcontainer {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,36 @@
+.canvasjs-chart-credit {
+    display: none !important;
+}
+
+.list-chart-container {
+    display: block;
+}
+
+.chart-view-container {
+    position: relative;
+}
+
+.chart-view-unlock-trial {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 20px;
+    background-color: white;
+}
+
+.list-chart-view-item {
+    border: 1px solid #c9c9c9;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 750px) {
+    .list-chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

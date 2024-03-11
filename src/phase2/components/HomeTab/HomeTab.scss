@@ -1,0 +1,169 @@
+.home-tab-container-0 {
+    margin: 20px;
+}
+
+.home-tab-title {
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+    font-size: 24px;
+    width: 100%;
+    color: #3c3c3c;
+}
+
+.home-tab-container-0-1 {
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.home-tab-container-0-1-form-control-root {
+    max-width: 350px;
+}
+
+.home-tab-container-0-1-btn-root {
+    background-color: #0C4DA0 !important;
+    text-transform: none !important;
+    text-wrap: nowrap !important;
+    transition: transform 0.3s ease;
+}
+
+.home-tab-container-0-1-btn-root:hover {
+    transform: scale(1.05);
+    background-color: #0a3d80 !important;
+}
+
+.home-tab-container-0-1-btn-root-unactive {
+    background-color: #6d6d6d !important;
+    text-transform: none !important;
+    text-wrap: nowrap !important;
+}
+
+.home-tab-container-0-1-btn-root-unactive:hover {
+    transform: scale(1.05);
+    background-color: #4e4e4e !important;
+}
+
+.home-tab-container-0-2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.home-tab-container-0-2-custom-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.home-tab-container-0-2-gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 25px 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.25));
+    pointer-events: none; /* Để phần tử gradient không chặn sự kiện click hoặc hover của thẻ img bên dưới */
+}
+
+.home-tab-container-0-2-content {
+    color: white;
+    width: auto;
+    font-family: 'IBM Plex Sans';
+    font-size: 15px;
+}
+
+.home-tab-container-0-2-content-farm-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.home-tab-container-0-2-content-table-td-title {
+    width: 200px;
+    height: 27px;
+}
+
+.home-tab-container-0-3-card {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 275px;
+}
+
+@mixin home-tab-container-0-3-card-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+}
+
+.home-tab-container-0-3-card-header-active {
+    @include home-tab-container-0-3-card-header;
+    background-color: #074E9F;
+}
+
+.home-tab-container-0-3-card-header-unactive {
+    @include home-tab-container-0-3-card-header;
+    background-color: #6d6d6d;
+}
+
+@mixin home-tab-container-0-3-card-body {
+    padding: 10px 15px;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+}
+
+.home-tab-container-0-3-card-body-active {
+    @include home-tab-container-0-3-card-body;
+    background-color: #e7f3ff;
+}
+
+.home-tab-container-0-3-card-body-unactive {
+    @include home-tab-container-0-3-card-body;
+    background-color: #e7e7e7;
+}
+
+.home-tab-container-0-3-card-body-table-td-1 {
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+}
+
+.home-tab-container-0-3-card-body-table-td-2 {
+    width: 110px;
+    text-wrap: nowrap;
+}
+
+@mixin home-tab-container-0-3-card-footer {
+    padding: 5px 20px 15px 20px;
+}
+
+.home-tab-container-0-3-card-footer-active {
+    @include home-tab-container-0-3-card-footer;
+    background-color: #e7f3ff;
+}
+
+.home-tab-container-0-3-card-footer-unactive {
+    @include home-tab-container-0-3-card-footer;
+    background-color: #e7e7e7;
+}
+
+@media screen and (max-width: 420px) {
+    .home-tab-container-0-2-custom-img {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-tab-container-0-2-custom-img {
+        height: 400px;
+    }
+}

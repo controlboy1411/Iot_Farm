@@ -1,0 +1,339 @@
+.common-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-boder {
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 15px;
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-status {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.row-status {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.status-value {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@mixin value-level {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.good-value {
+    @include value-level;
+    background-color: #54bf30;
+    width: 72px;
+}
+
+.medium-value {
+    @include value-level;
+    background-color: #f0b930;
+    width: 95px;
+}
+
+.bad-value {
+    @include value-level;
+    background-color: #d1402a;
+    width: 55px
+}
+
+.no-status-value {
+    @include value-level;
+    background-color: #9e9e9e;
+    width: 105px;
+}
+
+@mixin fa-icon {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.icon-temp {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-co2 {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-humi {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-fan {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-wind {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-light {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.icon-nh3 {
+    @include fa-icon;
+    color: #334f80;
+}
+
+.status-button {
+    color: gray;
+    font-weight: bold;
+}
+
+
+// New template
+.status-bar {
+    background-color: rgb(237, 243, 252);
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.status-bar-item-pos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-bar-item {
+    border-radius: 10px;
+    background-color: rgba(55, 111, 208, 0.125);
+    margin: 8px 16px;
+    width: 100%;
+    height: 110px;
+}
+
+.status-bar-item-body {
+    padding: 16px;
+    position: relative;
+}
+
+.status-bar-item-body-title {
+    color: rgb(55, 111, 208);
+    font-size: 1rem;
+    margin: 0px 0px 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-bar-item-body-title-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.status-bar-item-body-title-content-icon {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.status-bar-item-body-title-content-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.status-bar-item-body-title-status-pos {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+@mixin status-bar-item-body-title-status {
+    color: rgb(255, 255, 255);
+    font-size: 85%;
+    padding: 4px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+}
+
+.status-bar-item-body-title-status-good {
+    @include status-bar-item-body-title-status;
+    background-color: #54bf30;
+}
+
+.status-bar-item-body-title-status-medium {
+    @include status-bar-item-body-title-status;
+    background-color: #f0b930;
+}
+
+.status-bar-item-body-title-status-bad {
+    @include status-bar-item-body-title-status;
+    background-color: #d1402a;
+}
+
+.status-bar-item-body-title-status-no {
+    @include status-bar-item-body-title-status;
+    background-color: #9e9e9e;
+}
+
+.status-bar-item-body-value {
+    color: rgb(55, 111, 208);
+    margin: 0px 0px 24px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-bar-item-body-value-content {
+    display: flex;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.status-bar-item-body-value-icon {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.status-bar-item-body-footer {
+    color: rgb(55, 111, 208);
+    line-height: 1.57;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.status-bar-item-body-footer-percent-increase {
+    color: rgb(76, 175, 80);
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.status-bar-item-body-footer-percent-decrease {
+    color: rgb(175, 76, 76);
+    background-color: rgba(175, 76, 76, 0.1);
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+    .status-bar-item-body {
+        padding: 12px;
+    }
+    .status-bar-item-body-title {
+        margin-bottom: 12px;
+    }
+    .status-bar-item-body-value {
+        font-size: 18px;
+    }
+    .status-bar-item-body-title-content-name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .status-bar-item-body {
+        padding: 8px;
+    }
+    .status-bar-item-body-title {
+        margin-bottom: 8px;
+    }
+    .status-bar-item-body-value {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .status-bar-item-body {
+        padding: 12px 20px;
+        position: relative;
+    }
+
+    .status-bar-item {
+        border-radius: 10px;
+        background-color: rgba(55, 111, 208, 0.125);
+        margin: 6px 16px;
+        width: 100%;
+        height: 75px;
+    }
+
+    .status-bar-item-body-title {
+        color: rgb(55, 111, 208);
+        font-size: 1rem;
+        margin: 0px 0px 8px;
+        font-weight: 500;
+        line-height: 1.25;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .status-bar-item-body-title-content-name {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .status-bar-item-body-value {
+        color: rgb(55, 111, 208);
+        margin: 0px 0px 12px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .status-bar {
+        background-color: rgb(237, 243, 252);
+        padding: 8px 0px;
+        border-radius: 10px;
+        margin: 0 10px;
+    }
+
+    .status-bar-item-body {
+        padding: 12px 10px;
+        position: relative;
+    }
+
+    .status-bar-item-body-title-content-icon {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+    }
+}

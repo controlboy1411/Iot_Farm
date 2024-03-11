@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.react-datepicker__input-container input {
+	width: 100%;
+}
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+
+/* Start CSS for web layout */
+$header-height: 85px;
+$footer-height: 40px;
+$footer-height-v2: 75px;
+$menu-tab-width: 240px;
+$header-box-shadow-offset-x: 0;
+$header-box-shadow-offset-y: 0;
+$header-box-shadow-blur-radius: 4px;
+$header-box-shadow-spreed-radius: 4px;
+
+.layout-container {
+    position: relative;
+    height: 100vh;
+}
+
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+header {
+    top: 0;
+    box-shadow: $header-box-shadow-offset-x $header-box-shadow-offset-y $header-box-shadow-blur-radius $header-box-shadow-spreed-radius rgb(129 129 129 / 0.5);
+}
+
+footer {
+    bottom: 0;
+}
+
+.layout-content {
+    padding-top: $header-height; 		/* Adjust based on header height */
+    padding-bottom: $footer-height; 	/* Adjust based on footer height */
+}
+
+.layout-menu-tab {
+    position: absolute;
+    top: calc($header-height + $header-box-shadow-blur-radius + $header-box-shadow-blur-radius - 1px); 	/* Adjust based on header height */
+    left: 0;
+    width: $menu-tab-width; 			/* Adjust based on menu tab width */
+    height: calc(100% - $header-height - $header-box-shadow-blur-radius - $header-box-shadow-blur-radius - $footer-height + 1px); 	/* Adjust based on header and footer height */
+    overflow-y: auto;
+}
+
+.layout-main-component {
+    position: absolute;
+    top: calc($header-height + $header-box-shadow-blur-radius + $header-box-shadow-blur-radius - 1px); 	/* Adjust based on header height */
+    left: $menu-tab-width; 			/* Adjust based on menu tab width */
+    right: 0;
+    height: calc(100% - $header-height - $header-box-shadow-blur-radius - $header-box-shadow-blur-radius - $footer-height + 1px); 	/* Adjust based on header and footer height */
+    overflow-y: auto;
+    background-color: #f1f1f1;
+}
+
+.about-us-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 50px;
+	margin-left: 35px;
+	cursor: pointer;
+	z-index: 1200;
+}
+
+.about-us-title {
+	font-family: 'IBM Plex Sans';
+	font-weight: 700;
+	font-size: 16px;
+	color: #074E9F;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+@media screen and (max-width: 900px) {
+	.layout-menu-tab {
+		display: none;
+	}
+	.layout-main-component {
+		left: 0;
+	}
+	.about-us-container {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.layout-content {
+		padding-bottom: $footer-height-v2;
+	}
+	.layout-main-component {
+		height: calc(100% - $header-height - $header-box-shadow-blur-radius - $header-box-shadow-blur-radius - $footer-height-v2 + 1px);
+	}
+}
+/* End CSS for web layout */
+
+/* Start CSS for MUI component root */
+.MuiInputBase-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiInputLabel-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiMenuItem-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiTypography-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiTableCell-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiButtonBase-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiChip-root {
+	font-family: 'IBM Plex Sans' !important;
+}
+
+@mixin convert-p-to-div {
+    display: block;
+    /* Chuyển thẻ <p> thành một khối (block-level element) */
+    margin: 0;
+    /* Loại bỏ khoảng cách trên và dưới */
+    padding: 0;
+    /* Loại bỏ padding (nếu có) */
+    border: none;
+    /* Loại bỏ viền (nếu có) */
+    background-color: transparent;
+}
+
+.MuiTablePagination-selectLabel {
+    @include convert-p-to-div;
+	font-family: 'IBM Plex Sans' !important;
+}
+
+.MuiTablePagination-displayedRows {
+    @include convert-p-to-div;
+	font-family: 'IBM Plex Sans' !important;
+}
+/* End CSS for MUI component root */

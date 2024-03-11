@@ -1,0 +1,44 @@
+.information-tab-text-field {
+    width: 400px;
+}
+
+.information-tab-date-picker {
+    width: 400px;
+}
+
+.information-tab-ava {
+    width: 180px !important;
+    height: 180px !important;
+}
+
+@media screen and (max-width: 1250px) {
+    .information-tab-text-field {
+        width: 350px;
+    }
+    .information-tab-date-picker {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .information-tab-text-field {
+        width: 300px;
+    }
+    .information-tab-date-picker {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .information-tab-text-field {
+        width: 250px;
+    }
+    .information-tab-date-picker {
+        width: 250px;
+    }
+    .information-tab-ava {
+        width: 150px !important;
+        height: 150px !important;
+        margin-bottom: 25px !important;
+    }
+}

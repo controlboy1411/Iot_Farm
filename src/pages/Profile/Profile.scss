@@ -1,0 +1,20 @@
+.profile-common {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-main-home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px 20px 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .profile-main-home {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+}

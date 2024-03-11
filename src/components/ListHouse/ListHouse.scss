@@ -1,0 +1,116 @@
+.common-card {
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@mixin common-card-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.active-card-header {
+    @include common-card-header;
+    background-color: #60aadb;
+}
+
+.no-active-card-header {
+    @include common-card-header;
+    background-color: #9e9e9e;
+}
+
+.active-card-body {
+    border-style: none;
+    background-color: #add6ee;
+    padding: 8px 20px;
+}
+
+.no-active-card-body {
+    border-style: none;
+    background-color: #e4e4e4;
+    padding: 8px 20px;
+}
+
+.card-title-custom {
+    display: contents;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0f67a1;
+}
+
+.card-title-custom-no-active {
+    display: contents;
+    font-size: 18px;
+    font-weight: normal;
+    color: #5f6264;
+}
+
+.item-house-infor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-temp-active {
+    color: #599ecc;
+    width: 15px;
+    margin-right: 18px;
+}
+
+.icon-temp-no-active {
+    color: #a1a0a0;
+    width: 15px;
+    margin-right: 18px;
+}
+
+.list-house-no-data {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1050px) {
+    @mixin common-card-header {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .active-card-header {
+        @include common-card-header;
+        background-color: #60aadb;
+    }
+    
+    .no-active-card-header {
+        @include common-card-header;
+        background-color: #9e9e9e;
+    }
+
+    .card-title-custom {
+        display: contents;
+        font-size: 12px;
+        font-weight: normal;
+        color: #0f67a1;
+    }
+    
+    .card-title-custom-no-active {
+        display: contents;
+        font-size: 12px;
+        font-weight: normal;
+        color: #5f6264;
+    }
+
+    .icon-temp-active {
+        color: #599ecc;
+        width: 6px;
+        margin-right: 8px;
+    }
+    
+    .icon-temp-no-active {
+        color: #a1a0a0;
+        width: 6px;
+        margin-right: 8px;
+    }
+}
